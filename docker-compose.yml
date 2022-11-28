@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  api:
+    image: apellun/test3:latest
+    build:
+      context: .
+    ports:
+      - 8080:80
+    volumes:
+      - ./volumes:/code/volumes
+    env_file:
+      - ./envs.env
