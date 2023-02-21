@@ -7,13 +7,15 @@ from project.tools import security
 
 api = Namespace('favorites')
 
+
 @api.route('/movies')
 class FavoritesView(Resource):
     @api.marshal_with(favorite_movie, code=200, description='OK')
+    @api.doc(description="Gets user's favorites.")
     @security.auth_required
     def get(self):
         """
-        Get user favorites.
+        Gets user's favorites.
         """
         data = request.headers['Authorization']
         
@@ -25,20 +27,22 @@ class FavoritesView(Resource):
 
 @api.route('/movies/<int:mid>')
 class FavoriteView(Resource):
+    @api.doc(description="Adds movie to user's favorites.")
     @security.auth_required
     def post(self, mid):
         """
-        Add movie to user favorites.
+        Adds movie to user's favorites.
         """
         data = request.headers['Authorization']
 
         return favorites_service.add_movie_to_favorites(mid, data)
 
 
+    @api.doc(description="Deletes movie from user's favorites.")
     @security.auth_required
     def delete(self, mid):
         """
-        Delete movie from user favorites.
+        Deletes movie from user's favorites.
         """
         data = request.headers['Authorization']
 

@@ -3,5 +3,4 @@ venv/
 .*_cache/
 __pycache__
 .coverage
-docker-compose.yml
 envs.env

@@ -12,7 +12,6 @@ from project.services.users_service import UsersService
 from project.services.favorites_service import FavoritesService
 
 from project.setup.db import db
-from project.tools import security
 
 genre_dao = GenresDAO(db.session)
 director_dao = DirectorsDAO(db.session)

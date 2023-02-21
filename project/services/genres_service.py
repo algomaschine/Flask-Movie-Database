@@ -10,9 +10,16 @@ class GenresService:
         self.dao = dao
 
     def get_item(self, pk: int) -> Genre:
+        """
+        Gets genre from the database.
+        """
         if genre := self.dao.get_by_id(pk):
             return genre
         raise ItemNotFound(f'Genre with pk={pk} not exists.')
 
+
     def get_all(self, page: Optional[int] = None) -> list[Genre]:
+        """
+        Gets a list of all genres from the database.
+        """
         return self.dao.get_all(page=page)

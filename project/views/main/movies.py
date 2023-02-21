@@ -14,7 +14,7 @@ class MoviesView(Resource):
     @api.marshal_with(movie, as_list=True, code=200, description='OK')
     def get(self):
         """
-        Get all movies.
+        Gets all movies.
         """
         if request.args.get("status") == "new":
             return movie_service.get_all_new(**page_parser.parse_args())
@@ -27,6 +27,6 @@ class MovieView(Resource):
     @api.marshal_with(movie, code=200, description='OK')
     def get(self, movie_id: int):
         """
-        Get movie by id.
+        Gets movie by id.
         """
         return movie_service.get_item(movie_id)

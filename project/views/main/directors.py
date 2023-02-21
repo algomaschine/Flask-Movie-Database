@@ -13,7 +13,7 @@ class DirectorsView(Resource):
     @api.marshal_with(director, as_list=True, code=200, description='OK')
     def get(self):
         """
-        Get all directors.
+        Gets a list of all directors.
         """
         return director_service.get_all(**page_parser.parse_args())
 
@@ -24,6 +24,6 @@ class DirectorView(Resource):
     @api.marshal_with(director, code=200, description='OK')
     def get(self, director_id: int):
         """
-        Get director by id.
+        Gets director by id.
         """
         return director_service.get_item(director_id)

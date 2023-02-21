@@ -10,7 +10,11 @@ from project.config import BaseConfig
 
 config = BaseConfig()
 
+
 def _get_password_hash(password):
+    """
+    Hashes the password.
+    """
     password = hashlib.pbkdf2_hmac(
         'sha256',
         password.encode('utf-8'),
@@ -20,8 +24,11 @@ def _get_password_hash(password):
 
     return base64.b64encode(password).decode("utf-8", "ignore")
 
-def _compare_passwords(password_hash, entered_password):
 
+def _compare_passwords(password_hash, entered_password):
+    """
+    Compares the sent password with a user's password in a database.
+    """
     password = base64.b64decode(password_hash)
 
     new_hash = hashlib.pbkdf2_hmac(
@@ -33,8 +40,11 @@ def _compare_passwords(password_hash, entered_password):
 
     return hmac.compare_digest(password, new_hash)
 
-def _generate_tokens(id, password):
 
+def _generate_tokens(id, password):
+    """
+    Generates a pair of access + refresh tokens for a user.
+    """
     data = {
         "id": id,
             "password": password,
@@ -58,7 +68,12 @@ def _generate_tokens(id, password):
         "refresh_token": refresh_token
     }
 
+
 def _approve_refresh_token(refresh_token):
+    """
+    Checks the user's refresh token, in case of success
+    returns a new pair of tokens.
+    """
     data = jwt.decode(jwt=refresh_token, key=config.SECRET_KEY,
                         algorithms=[config.JWT_ALGORITHM])
     uid = data.get("id")
@@ -67,7 +82,12 @@ def _approve_refresh_token(refresh_token):
     tokens = _generate_tokens(uid, password)
     return tokens
 
+
 def auth_required(func):
+    """
+    A wrapper for the endpoint that allows only
+    authenticated users to access the endpoint.
+    """
     def wrapper(*args, **kwargs):
         if "Authorization" not in request.headers:
             abort(401, description='Unauthorized')

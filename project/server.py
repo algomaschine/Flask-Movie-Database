@@ -1,15 +1,12 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify
 from flask_cors import CORS
-# from flask_restx import Api
 
 from project.exceptions import BaseServiceError
 from project.setup.api import api
 from project.setup.db import db
 from project.views import auth_ns, users_ns
 from project.views.main import movies_ns, directors_ns, genres_ns, favorites_ns
-from project.views.auth import auth_ns
-
-# api = Api(doc='/docs')
+from project.views.auth import auth_ns, users_ns
 
 def base_service_error_handler(exception: BaseServiceError):
     return jsonify({'error': str(exception)}), exception.code
@@ -21,12 +18,11 @@ def create_app(config_obj):
 
     cors = CORS(app=app)
     cors.init_app(app)
-    # app.config['CORS_HEADERS'] = 'Content-Type'
+    app.config['CORS_HEADERS'] = 'Content-Type'
 
     db.init_app(app)
     api.init_app(app)
 
-    # Регистрация эндпоинтов
     api.add_namespace(auth_ns)
     api.add_namespace(users_ns)
     api.add_namespace(genres_ns)

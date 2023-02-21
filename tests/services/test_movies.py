@@ -32,9 +32,15 @@ class TestMoviesService:
         return obj
 
     def test_get_movie(self, movies_service, movie):
+        """
+        Checks if the function is callable.
+        """
         assert movies_service.get_item(movie.id)
 
     def test_movie_not_found(self, movies_dao_mock, movies_service):
+        """
+        Checks if the function returns 404 when the requested movie does not exist.
+        """
         movies_dao_mock.get_by_id.return_value = None
 
         with pytest.raises(ItemNotFound):
@@ -42,6 +48,9 @@ class TestMoviesService:
 
     @pytest.mark.parametrize('page', [1, None], ids=['with page', 'without page'])
     def test_get_movies(self, movies_dao_mock, movies_service, page):
+        """
+        Checks if the function returns a proper movie objects list.
+        """
         movies = movies_service.get_all(page=page)
         assert len(movies) == 2
         assert movies == movies_dao_mock.get_all.return_value

@@ -10,10 +10,11 @@ api = Namespace('users')
 @api.route('/<int:uid>')
 class UsersView(Resource):
     @api.marshal_with(user, code=200, description='OK')
+    @api.doc(description='Gets user by id.')
     @security.auth_required
     def get(self, uid):
         """
-        Get user by id.
+        Gets user by id unless useer is not found.
         """
         user = users_service.get_one_by_id(uid)
 
@@ -22,12 +23,12 @@ class UsersView(Resource):
         
         return user
 
-
     @api.marshal_with(user, code=200, description='OK')
+    @api.doc(description="Changes user's data.")
     @security.auth_required
     def patch(self, uid):
         """
-        Change user data.
+        Changes user's data.
         """
         try:
             data = request.json
@@ -37,10 +38,11 @@ class UsersView(Resource):
         return users_service.update(uid, data)
 
 
+    @api.doc(description="Changes user's password.")
     @security.auth_required
     def put(self, uid):
         """
-        Change user password.
+        Changes user's password.
         """
         try:
             data = request.json

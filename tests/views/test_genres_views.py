@@ -12,11 +12,18 @@ class TestGenresView:
         return obj
 
     def test_many(self, client, genre):
+        """
+        Checks if the genres/ view returns a correct list of
+        properly serialized genre objects.
+        """
         response = client.get("/genres/")
         assert response.status_code == 200
         assert response.json == [{"id": genre.id, "name": genre.name}]
 
     def test_genre_pages(self, client, genre):
+        """
+        Checks if the genres view pagination works correctly.
+        """
         response = client.get("/genres/?page=1")
         assert response.status_code == 200
         assert len(response.json) == 1
@@ -26,10 +33,17 @@ class TestGenresView:
         assert len(response.json) == 0
 
     def test_genre(self, client, genre):
+        """
+        Checks if the genres/uid view returns a properly serialized genre object.
+        """
         response = client.get("/genres/1/")
         assert response.status_code == 200
         assert response.json == {"id": genre.id, "name": genre.name}
 
     def test_genre_not_found(self, client, genre):
+        """
+        Checks if the genres/uid view returns a 404 when
+        the requested genre does not exist in the database.
+        """
         response = client.get("/genres/2/")
         assert response.status_code == 404

@@ -10,9 +10,16 @@ class DirectorsService:
         self.dao = dao
 
     def get_item(self, pk: int) -> Director:
+        """
+        Returns a director from the database by the id.
+        """
         if director := self.dao.get_by_id(pk):
             return director
-        raise ItemNotFound(f'Director with pk={pk} not exists.')
+        raise ItemNotFound(f'Director with pk={pk} does not exist.')
+
 
     def get_all(self, page: Optional[int] = None) -> list[Director]:
+        """
+        Returns a full list of directors from the database.
+        """
         return self.dao.get_all(page=page)

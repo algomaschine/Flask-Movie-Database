@@ -14,7 +14,9 @@ class TestUserView:
 
     @patch('jwt.decode')        
     def test_get_user(self, jwt_decode, user, client):
-
+        """
+        Checks if the users/uid view returns the user by id correctly.
+        """
         response = client.get("/users/1", headers={'Authorization': "Bearer faketoken"})
 
         assert response.status_code == 200
@@ -22,6 +24,10 @@ class TestUserView:
 
 
     def test_user_not_found(self, client):
+        """
+        Checks if the users/uid view raises 404 when the requested
+        user does not exist.
+        """
         response = client.get("/user/2")
         assert response.status_code == 404
 

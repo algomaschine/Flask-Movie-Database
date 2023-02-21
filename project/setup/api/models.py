@@ -2,17 +2,17 @@ from flask_restx import fields, Model
 
 from project.setup.api import api
 
-genre: Model = api.model('Жанр', {
+genre: Model = api.model('Genre', {
     'id': fields.Integer(required=True, example=1),
     'name': fields.String(required=True, max_length=100, example='Комедия'),
 })
 
-director: Model = api.model('Режиссер', {
+director: Model = api.model('Director', {
     'id': fields.Integer(required=True, example=1),
     'name': fields.String(required=True, max_length=100, example='Квентин Тарантино'),
 })
 
-movie: Model = api.model('Фильм', {
+movie: Model = api.model('Movie', {
     'id': fields.Integer(required=True, example=1),
     'title': fields.String(required=True, max_length=100, example='Ла-Ла Ленд'),
     'description': fields.String(required=True, max_length=100, example='США после Гражданской войны. Легендарный охотник за головами Джон Рут по кличке Вешатель конвоирует заключенную. По пути к ним прибиваются еще несколько путешественников. Снежная буря вынуждает компанию искать укрытие в лавке на отшибе, где уже расположилось весьма пестрое общество: генерал конфедератов, мексиканец, ковбой… И один из них - не тот, за кого себя выдает.'),
@@ -23,7 +23,7 @@ movie: Model = api.model('Фильм', {
     'director_id': fields.Integer(example=1)
 })
 
-user: Model = api.model('Пользователь', {
+user: Model = api.model('User', {
     'id': fields.Integer(required=True, example=1),
     'email': fields.String(required=True, max_length=100, example='vasya@yandex.ru'),
     'name': fields.String(example='Vasya'),
@@ -31,6 +31,6 @@ user: Model = api.model('Пользователь', {
     'favorite_genre': fields.Integer(example=3)
 })
 
-favorite_movie: Model = api.model('Любимые фильмы', {
+favorite_movie: Model = api.model('Favorite movies', {
     'movie_id': fields.Integer(required=True, example=1)
 })

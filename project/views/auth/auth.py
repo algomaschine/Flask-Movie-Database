@@ -11,7 +11,7 @@ class AuthView(Resource):
     @api.marshal_with(user, code=201, description='OK')
     def post(self):
         """
-        Register a new user.
+        User register.
         """
         data = request.json
 
@@ -37,7 +37,8 @@ class AuthView(Resource):
 
     def put(self):
         """
-        Refresh access token for a logged in user.
+        Checks if the user's refresh token is valid and
+        refreshes access token for a logged in user.
         """
         data = request.json
 

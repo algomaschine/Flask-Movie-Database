@@ -32,9 +32,15 @@ class TestGenresService:
         return obj
 
     def test_get_genre(self, genres_service, genre):
+        """
+        Checks if the function is callable.
+        """
         assert genres_service.get_item(genre.id)
 
     def test_genre_not_found(self, genres_dao_mock, genres_service):
+        """
+        Checks if the function returns 404 when the requested genre does not exist.
+        """
         genres_dao_mock.get_by_id.return_value = None
 
         with pytest.raises(ItemNotFound):
@@ -42,6 +48,9 @@ class TestGenresService:
 
     @pytest.mark.parametrize('page', [1, None], ids=['with page', 'without page'])
     def test_get_genres(self, genres_dao_mock, genres_service, page):
+        """
+        Checks if the function returns a proper genre objects list.
+        """
         genres = genres_service.get_all(page=page)
         assert len(genres) == 2
         assert genres == genres_dao_mock.get_all.return_value

@@ -5,9 +5,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./volumes:/code/volumes
+      - /Users/apellun/PycharmProjects/flask_api_term_project/coursework_3_source/volumes:/code/volumes
     environment:
       - FLASK_APP=run.py
       - FLASK_ENV=production
-volumes:
-  volumes:
