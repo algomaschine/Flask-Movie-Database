@@ -1,17 +1,13 @@
-# Flask course project
+# Flask coursework
 
 This is a web-app written with Flask framework. It imitates an online movie database with a CRUD for movies, directors, genres and users, authentication, and a possibility for a user to add movie to their favorites. The bone structure of the app (like config factory, container, base DAO/service layers for base models and overall module structure) was provided by the course tutors.
 
-<p> <b>To launch:</b>
-<br>1. Copy the repository onto your computer
-<br>2. Run the following commands in terminal:
-<br>export FLASK_ENV=production
-<br>export FLASK_APP=run.py
-<br>flask run -p 5002
-<br><b>Or:</b>
-<br>1. Copy the docker-compose.yml onto your computer
-<br>2. From the folder with the file run docker-compose up
-</p>
+## How to run:
+1. Copy the repository to your computer
+2. Run the following commands in terminal:
+`export FLASK_ENV=production`
+`export FLASK_APP=run.py`
+`flask run`
 
 ## Challenges
 <ul>
@@ -32,4 +28,4 @@ You can see the viewpoints and models on a root page by starting the app in a de
 
 ## Summary
 
-This project is not perfect in any way: it lacks type hints, mainly built with simple logic and, generally, not very well thought through. It was my first big project, so, once I have completed the main challenges, I decided to leave it as it is in order to continue learning and making new projects.
+This project is not perfect in any way: it lacks type hints, mainly built with simple logic and, generally, not very well thought through. Also, the handling of possible errors is inconsistent. It was my first big project, so, once I have completed the main challenges, I decided to leave it as it is in order to continue learning and making new projects.
