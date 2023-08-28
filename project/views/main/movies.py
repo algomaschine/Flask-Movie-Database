@@ -1,7 +1,6 @@
 from flask_restx import Namespace, Resource
 from flask import request
-
-from project.container import movie_service
+from project.container import movies_service
 from project.setup.api.models import movie
 from project.setup.api.parsers import page_parser
 
@@ -17,8 +16,8 @@ class MoviesView(Resource):
         Gets all movies.
         """
         if request.args.get("status") == "new":
-            return movie_service.get_all_new(**page_parser.parse_args())
-        return movie_service.get_all(**page_parser.parse_args())
+            return movies_service.get_all_new(**page_parser.parse_args())
+        return movies_service.get_all(**page_parser.parse_args())
 
 
 @api.route('/<int:movie_id>/')
@@ -29,4 +28,4 @@ class MovieView(Resource):
         """
         Gets movie by id.
         """
-        return movie_service.get_item(movie_id)
+        return movies_service.get_item(movie_id)

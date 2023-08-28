@@ -1,5 +1,4 @@
 from sqlalchemy import Column, DateTime, func, Integer
-
 from project.setup.db import db
 
 

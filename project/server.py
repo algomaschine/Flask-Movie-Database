@@ -1,12 +1,12 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-
 from project.exceptions import BaseServiceError
 from project.setup.api import api
 from project.setup.db import db
 from project.views import auth_ns, users_ns
 from project.views.main import movies_ns, directors_ns, genres_ns, favorites_ns
 from project.views.auth import auth_ns, users_ns
+
 
 def base_service_error_handler(exception: BaseServiceError):
     return jsonify({'error': str(exception)}), exception.code

@@ -18,10 +18,9 @@ class BaseConfig:
     TOKEN_EXPIRE_MINUTES = 15
     TOKEN_EXPIRE_DAYS = 130
 
-    PWD_HASH_SALT = base64.b64decode("salt")
+    SALT_KEY = os.getenv('SALT_KEY', "salt")
+    PWD_HASH_SALT = base64.b64decode(SALT_KEY)
     PWD_HASH_ITERATIONS = 100_000
-
-    ITEMS_PER_PAGE = 12
 
     RESTX_JSON = {
         'ensure_ascii': False,
@@ -37,49 +36,11 @@ class DevelopmentConfig(BaseConfig):
     DEBUG = True
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_DATABASE_URI = "sqlite:///" + BASE_DIR.joinpath('project.db').as_posix()
-    SECRET_KEY = os.getenv('SECRET_KEY', 'you-will-never-guess')
-    JSON_AS_ASCII = False
-    JWT_ALGORITHM = 'HS256'
-    
-    ITEMS_PER_PAGE = 12
-
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-    TOKEN_EXPIRE_MINUTES = 15
-    TOKEN_EXPIRE_DAYS = 130
-
-    PWD_HASH_SALT = base64.b64decode("salt")
-    PWD_HASH_ITERATIONS = 100_000
-
-    ITEMS_PER_PAGE = 12
-
-    RESTX_JSON = {
-        'ensure_ascii': False,
-    }
 
 
 class ProductionConfig(BaseConfig):
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = "sqlite:///" + BASE_DIR.joinpath('volumes/project.db').as_posix()
-    SECRET_KEY = os.getenv('SECRET_KEY', 'you-will-never-guess')
-    JSON_AS_ASCII = False
-    JWT_ALGORITHM = 'HS256'
-    
-    ITEMS_PER_PAGE = 12
-
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-    TOKEN_EXPIRE_MINUTES = 15
-    TOKEN_EXPIRE_DAYS = 130
-
-    PWD_HASH_SALT = base64.b64decode("salt")
-    PWD_HASH_ITERATIONS = 100_000
-
-    ITEMS_PER_PAGE = 12
-
-    RESTX_JSON = {
-        'ensure_ascii': False,
-    }
 
 
 class ConfigFactory:

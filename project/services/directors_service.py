@@ -1,5 +1,4 @@
 from typing import Optional
-
 from project.dao.base import BaseDAO
 from project.exceptions import ItemNotFound
 from project.models import Director
@@ -15,8 +14,7 @@ class DirectorsService:
         """
         if director := self.dao.get_by_id(pk):
             return director
-        raise ItemNotFound(f'Director with pk={pk} does not exist.')
-
+        raise ItemNotFound(f"Director doesn't exist")
 
     def get_all(self, page: Optional[int] = None) -> list[Director]:
         """

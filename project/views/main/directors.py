@@ -1,6 +1,5 @@
 from flask_restx import Namespace, Resource
-
-from project.container import director_service
+from project.container import directors_service
 from project.setup.api.models import director
 from project.setup.api.parsers import page_parser
 
@@ -15,7 +14,7 @@ class DirectorsView(Resource):
         """
         Gets a list of all directors.
         """
-        return director_service.get_all(**page_parser.parse_args())
+        return directors_service.get_all(**page_parser.parse_args())
 
 
 @api.route('/<int:director_id>/')
@@ -26,4 +25,4 @@ class DirectorView(Resource):
         """
         Gets director by id.
         """
-        return director_service.get_item(director_id)
+        return directors_service.get_item(director_id)

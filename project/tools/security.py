@@ -4,7 +4,6 @@ import hmac
 import datetime
 import calendar
 import jwt
-
 from flask import abort, request
 from project.config import BaseConfig
 
@@ -21,7 +20,6 @@ def _get_password_hash(password):
         config.PWD_HASH_SALT,
         config.PWD_HASH_ITERATIONS
     )
-
     return base64.b64encode(password).decode("utf-8", "ignore")
 
 
@@ -30,14 +28,13 @@ def _compare_passwords(password_hash, entered_password):
     Compares the sent password with a user's password in a database.
     """
     password = base64.b64decode(password_hash)
-
+    
     new_hash = hashlib.pbkdf2_hmac(
         'sha256',
         entered_password.encode('utf-8'),
         config.PWD_HASH_SALT,
         config.PWD_HASH_ITERATIONS
     )
-
     return hmac.compare_digest(password, new_hash)
 
 
@@ -103,5 +100,4 @@ def auth_required(func):
             abort(401, description='Unauthorized')
 
         return func(*args, **kwargs)
-
     return wrapper
