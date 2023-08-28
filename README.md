@@ -4,9 +4,9 @@ This is a web-app written with Flask framework. It imitates an online movie data
 
 ## How to run:
 1. Copy the repository to your computer
-2. Run the following commands in terminal:
-`export FLASK_ENV=production`
-`export FLASK_APP=run.py`
+2. Run the following commands in the terminal: <br>
+`export FLASK_ENV=production` <br>
+`export FLASK_APP=run.py` <br>
 `flask run`
 
 ## Challenges
