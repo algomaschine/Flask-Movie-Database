@@ -1,6 +1,5 @@
 import pytest
 from unittest.mock import patch
-
 from project.models import User
 
 
@@ -21,7 +20,6 @@ class TestUserView:
 
         assert response.status_code == 200
         assert response.json == {"id": user.id, "name": user.name, "email": user.email, "surname": user.surname, "favorite_genre": user.favorite_genre}
-
 
     def test_user_not_found(self, client):
         """
