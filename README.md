@@ -7,6 +7,8 @@ This is a web-app written with Flask framework. It imitates an online movie data
 2. Run the following commands in the terminal: <br>
 `export FLASK_ENV=production` <br>
 `export FLASK_APP=run.py` <br>
+3. Run the create_tables.py file
+4. Run the following command: <br>
 `flask run`
 
 ## Challenges
@@ -28,4 +30,4 @@ You can see the viewpoints and models on a root page by starting the app in a de
 
 ## Summary
 
-This project is not perfect in any way: it lacks type hints, mainly built with simple logic and, generally, not very well thought through. Also, the handling of possible errors is inconsistent. It was my first big project, so, once I have completed the main challenges, I decided to leave it as it is in order to continue learning and making new projects.
+This project is not perfect in any way. It was my first big project, so, once I have completed the main challenges, I decided to leave it as it is in order to continue learning and making new projects.
