@@ -1,8 +1,9 @@
 from flask_restx import Namespace, Resource
-from flask import request, abort
+from flask import request
 from project.container import users_service
 from project.setup.api.models import user
 from project.tools import security
+from project.exceptions import NotAuthorized, BadRequest
 
 api = Namespace('auth')
  
@@ -15,8 +16,8 @@ class RegisterView(Resource):
         User register.
         """
         data = request.json
-        if data is None:
-            abort(400, description='No data given')
+        if not data:
+            raise BadRequest(f"Enter new user's data")
         return users_service.create(data)
     
 
@@ -27,8 +28,8 @@ class LoginView(Resource):
         User login.
         """
         data = request.json
-        if data is None:
-            abort(400, description='No data given')
+        if not data:
+            raise BadRequest(f"Enter the user's login and password")
         return users_service.login(data)
 
     def put(self):
@@ -36,9 +37,9 @@ class LoginView(Resource):
         Checks if the user's refresh token is valid and
         refreshes access token for a logged in user.
         """
-        data = request.json
         try:
+            data = request.json
             token = data['refresh_token']
         except:
-            abort(401, description='Unauthorized')
+            raise NotAuthorized(f'Not authorized')
         return security._approve_refresh_token(token)

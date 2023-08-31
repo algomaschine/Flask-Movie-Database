@@ -5,12 +5,13 @@ import datetime
 import calendar
 import jwt
 from flask import abort, request
+from typing import Dict
 from project.config import BaseConfig
 
 config = BaseConfig()
 
 
-def _get_password_hash(password):
+def _get_password_hash(password: str) -> str:
     """
     Hashes the password.
     """
@@ -23,7 +24,7 @@ def _get_password_hash(password):
     return base64.b64encode(password).decode("utf-8", "ignore")
 
 
-def _compare_passwords(password_hash, entered_password):
+def _compare_passwords(password_hash: str, entered_password: str) -> bool:
     """
     Compares the sent password with a user's password in a database.
     """
@@ -38,7 +39,7 @@ def _compare_passwords(password_hash, entered_password):
     return hmac.compare_digest(password, new_hash)
 
 
-def _generate_tokens(id, password):
+def _generate_tokens(id: int, password: str) -> Dict:
     """
     Generates a pair of access + refresh tokens for a user.
     """
@@ -66,7 +67,7 @@ def _generate_tokens(id, password):
     }
 
 
-def _approve_refresh_token(refresh_token):
+def _approve_refresh_token(refresh_token: str) -> Dict:
     """
     Checks the user's refresh token, in case of success
     returns a new pair of tokens.

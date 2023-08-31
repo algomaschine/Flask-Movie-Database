@@ -1,8 +1,9 @@
-from flask import request, abort
+from flask import request
 from flask_restx import Namespace, Resource
 from project.container import favorites_service
 from project.setup.api.models import favorite_movie
 from project.tools import security
+from project.exceptions import NotAuthorized
 
 api = Namespace('favorites')
 
@@ -19,7 +20,7 @@ class FavoritesView(Resource):
         try:
             data = request.headers['Authorization']
         except:
-            abort(401, description='Unauthorized')
+            raise NotAuthorized(f'Not authorized')
         return favorites_service.get_all(data)
 
 
@@ -27,24 +28,24 @@ class FavoritesView(Resource):
 class FavoriteView(Resource):
     @api.doc(description="Adds movie to user's favorites.")
     @security.auth_required
-    def post(self, mid):
+    def post(self, mid: int):
         """
         Adds movie to user's favorites.
         """
         try:
             data = request.headers['Authorization']
         except:
-            abort(401, description='Unauthorized')
+            raise NotAuthorized(f'Not authorized')
         return favorites_service.add_movie_to_favorites(mid, data)
 
     @api.doc(description="Deletes movie from user's favorites.")
     @security.auth_required
-    def delete(self, mid):
+    def delete(self, mid: int):
         """
         Deletes movie from user's favorites.
         """
         try:
             data = request.headers['Authorization']
         except:
-            abort(401, description='Unauthorized')
+            raise NotAuthorized(f'Not authorized')
         return favorites_service.delete_movie_from_favorites(mid, data)

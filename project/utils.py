@@ -1,5 +1,5 @@
 import json
-from typing import Union
+from typing import Union, Dict
 
 
 def read_json(filename: str, encoding: str = "utf-8") -> Union[list, dict]:

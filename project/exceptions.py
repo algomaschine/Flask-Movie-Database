@@ -6,3 +6,6 @@ class ItemNotFound(BaseServiceError):
 
 class NotAuthorized(BaseServiceError):
     code = 401
+    
+class BadRequest(BaseServiceError):
+    code = 400

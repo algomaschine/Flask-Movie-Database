@@ -5,19 +5,19 @@ class UsersDAO:
     def __init__(self, session):
         self.session = session
 
-    def get_one(self, email):
+    def get_one(self, email) -> object:
         """
         Gets user from the database by email.
         """
         return self.session.query(User).filter(User.email == email).first()
 
-    def get_one_by_id(self, uid):
+    def get_one_by_id(self, uid) -> object:
         """
         Gets user from the database by id.
         """
         return self.session.query(User).get(uid)
 
-    def create(self, data):
+    def create(self, data) -> object:
         """
         Creates a new user in the database.
         """
@@ -26,7 +26,7 @@ class UsersDAO:
         self.session.commit()
         return new_user
 
-    def update(self, uid, data):
+    def update(self, uid, data) -> object:
         """
         Updates the user's data in the database.
         """
@@ -39,7 +39,7 @@ class UsersDAO:
         self.session.commit()
         return user
 
-    def update_password(self, uid, password):
+    def update_password(self, uid, password) -> None:
         """
         Updates the user's password in the database.
         """
