@@ -1,5 +1,7 @@
 # Flask coursework
 
+<p><b>Technologies:</b> Flask, PostgresQL, SQLAlchemy, Docker, SQLite.</p>
+
 This is a web-app written with Flask framework. It imitates an online movie database with a CRUD for movies, directors, genres and users, authentication, and a possibility for a user to add movie to their favorites. The bone structure of the app (like config factory, container, base DAO/service layers for base models and overall module structure) was provided by the course tutors.
 
 ## How to run:
