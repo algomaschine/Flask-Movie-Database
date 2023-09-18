@@ -1,9 +1,9 @@
 {
 	"movies": [
 		{
-			"title": "Йеллоустоун",
-			"description": "Владелец ранчо пытается сохранить землю своих предков. Кевин Костнер в неовестерне от автора «Ветреной реки»",
-			"trailer": "https://www.youtube.com/watch?v=UKei_d0cbP4",
+			"title": "Yellowstone",
+			"description": "John Dutton, patriarch of a Mountain ranching family and owner of the largest ranch in the US, fights to defend his land and his family from the modern-day forces that threaten his way of life: land developers, an Indian reservation and America's first National Park.",
+			"trailer": "https://youtu.be/jr32f0rnK1o",
 			"year": 2018,
 			"rating": 8.6,
 			"genre_id": 17,
@@ -11,9 +11,9 @@
 			"pk": 1
 		},
 		{
-			"title": "Омерзительная восьмерка",
-			"description": "США после Гражданской войны. Легендарный охотник за головами Джон Рут по кличке Вешатель конвоирует заключенную. По пути к ним прибиваются еще несколько путешественников. Снежная буря вынуждает компанию искать укрытие в лавке на отшибе, где уже расположилось весьма пестрое общество: генерал конфедератов, мексиканец, ковбой… И один из них - не тот, за кого себя выдает.",
-			"trailer": "https://www.youtube.com/watch?v=lmB9VWm0okU",
+			"title": "The Hateful Eight",
+			"description": "A bounty hunter and his captured fugitive are caught in the middle of a snowstorm. They seek refuge at a small lodge and encounter a twisted turn of events there.",
+			"trailer": "https://youtu.be/69UwVX6Riv8",
 			"year": 2015,
 			"rating": 7.8,
 			"genre_id": 4,
@@ -21,8 +21,8 @@
 			"pk": 2
 		},
 		{
-			"title": "Вооружен и очень опасен",
-			"description": "События происходят в конце XIX века на Диком Западе, в Америке. В основе сюжета — сложные перипетии жизни работяги — старателя Габриэля Конроя. Найдя нефть на своем участке, он познает и счастье, и разочарование, и опасность, и отчаяние...",
+			"title": "Armed and Dangerous",
+			"description": "Events taking place at the end of the 19th century in the Wild West in America. The plot — the complex vicissitudes of life of hard workers — a prospector Gabriel Conroy. Having found oil on his land, he knows happiness and disappointment, and danger, and despair.",
 			"trailer": "https://www.youtube.com/watch?v=hLA5631F-jo",
 			"year": 1978,
 			"rating": 6,
@@ -31,9 +31,9 @@
 			"pk": 3
 		},
 		{
-			"title": "Джанго освобожденный",
-			"description": "Эксцентричный охотник за головами, также известный как Дантист, промышляет отстрелом самых опасных преступников. Работенка пыльная, и без надежного помощника ему не обойтись. Но как найти такого и желательно не очень дорогого? Освобождённый им раб по имени Джанго – прекрасная кандидатура. Правда, у нового помощника свои мотивы – кое с чем надо сперва разобраться.",
-			"trailer": "https://www.youtube.com/watch?v=2Dty-zwcPv4",
+			"title": "Django Unchained",
+			"description": "When Django, a slave, is freed, he joins forces with a bounty hunter to rescue his wife, who has been enslaved by Calvin, a hard-hearted plantation owner.",
+			"trailer": "https://youtu.be/_iH0UBYDI4g",
 			"year": 2012,
 			"rating": 8.4,
 			"genre_id": 17,
@@ -41,9 +41,9 @@
 			"pk": 4
 		},
 		{
-			"title": "Рокетмен",
-			"description": "История превращения застенчивого парня Реджинальда Дуайта, талантливого музыканта из маленького городка, в суперзвезду и культовую фигуру мировой поп-музыки Элтона Джона.",
-			"trailer": "https://youtu.be/VISiqVeKTq8",
+			"title": "Rocketman",
+			"description": "After completing his studies, Reginald begins to perform rock music at local pubs. Later, he meets John Reid, a music manager, who helps him rise to fame, but also creates chaos in his life.",
+			"trailer": "https://youtu.be/S3vO8E2e6G0",
 			"year": 2019,
 			"rating": 7.3,
 			"genre_id": 18,
@@ -51,9 +51,9 @@
 			"pk": 5
 		},
 		{
-			"title": "Бурлеск",
-			"description": "Али - молодая амбициозная девушка из маленького городка с чудесным голосом, совсем недавно потеряла своих родителей. Теперь никому не нужная, она отправляется в большой город Лос-Анджелес, где устраивается на работу у Тесс, хозяйки ночного клуба «Бурлеск». За короткое время она находит друзей, поклонников и любовь всей своей жизни. Но может ли сказка длиться вечно? Ведь немало людей завидует этой прекрасной танцовщице...",
-			"trailer": "https://www.youtube.com/watch?v=sgOhxneHkiE",
+			"title": "Burlesque",
+			"description": "Ali leaves her job as a waitress to pursue a career on stage. After failing the audition, she wanders into a club where, after a long struggle, she not only becomes a lead dancer but also a singer.",
+			"trailer": "https://youtu.be/p2r_8l1c2nQ",
 			"year": 2010,
 			"rating": 6.4,
 			"genre_id": 18,
@@ -61,9 +61,9 @@
 			"pk": 6
 		},
 		{
-			"title": "Чикаго",
-			"description": "Рокси Харт мечтает о песнях и танцах и о том, как сравняться с самой Велмой Келли, примадонной водевиля. И Рокси действительно оказывается с Велмой в одном положении, когда несколько очень неправильных шагов приводят обеих на скамью подсудимых.",
-			"trailer": "https://www.youtube.com/watch?v=YxzS_LzWdG8",
+			"title": "Chicago",
+			"description": "Nightclub sensation Velma kills her philandering husband. Chicago's adroit lawyer, Billy Flynn, is set to become her defence lawyer, who also defends Roxie, under trial for murder.",
+			"trailer": "https://youtu.be/YwXWryx-oJ0",
 			"year": 2002,
 			"rating": 7.2,
 			"genre_id": 18,
@@ -71,9 +71,9 @@
 			"pk": 7
 		},
 		{
-			"title": "Мулен Руж",
-			"description": "Париж, 1899 год. Знаменитый ночной клуб «Мулен Руж» — это не только дискотека и шикарный бордель, но и место, где, повинуясь неудержимому желанию прочувствовать атмосферу праздника, собираются страждущие приобщиться к красоте, свободе, любви и готовые платить за это наличными.",
-			"trailer": "https://www.youtube.com/watch?v=lpiMCTd87gE",
+			"title": "Moulin Rouge",
+			"description": "Christian, an English writer, travels to Paris to join the Bohemian revolution. He visits the city's biggest night club, Moulin Rouge, and falls in love with its star performer and courtesan, Satine.",
+			"trailer": "https://youtu.be/2PpgPxjzbkA",
 			"year": 2001,
 			"rating": 7.6,
 			"genre_id": 18,
@@ -81,9 +81,9 @@
 			"pk": 8
 		},
 		{
-			"title": "Одержимость",
-			"description": "Эндрю мечтает стать великим. Казалось бы, вот-вот его мечта осуществится. Юношу замечает настоящий гений, дирижер лучшего в стране оркестра. Желание Эндрю добиться успеха быстро становится одержимостью, а безжалостный наставник продолжает подталкивать его все дальше и дальше – за пределы человеческих возможностей. Кто выйдет победителем из этой схватки?",
-			"trailer": "https://www.youtube.com/watch?v=Q9PxDPOo1jw",
+			"title": "Whiplash",
+			"description": "Andrew enrols in a music conservatory to become a drummer. But he is mentored by Terence Fletcher, whose unconventional training methods push him beyond the boundaries of reason and sensibility.",
+			"trailer": "https://youtu.be/oAhvG3wIE_g",
 			"year": 2013,
 			"rating": 8.5,
 			"genre_id": 4,
@@ -91,9 +91,9 @@
 			"pk": 9
 		},
 		{
-			"title": "Наследие итало-диско",
-			"description": "Авторитетный взгляд на историю культового электронного стиля глазами самых известных его представителей и последователей. Увлекательный рассказ о феномене итало-диско и возможность увидеть своими глазами, что творилось на главных танцполах 80-х.",
-			"trailer": "https://www.youtube.com/watch?v=LVdRR6m5OdQ",
+			"title": "Italo Disco Legacy",
+			"description": "A journey into the past and the future of Italo Disco music through the stories of the original 80's heroes and cult DJs and the voice of the new generation of artists, radio broadcasters and fans ready to carry on the Italo Disco Legacy.",
+			"trailer": "https://youtu.be/qKU6fE5CyKE",
 			"year": 2017,
 			"rating": 0,
 			"genre_id": 9,
@@ -101,9 +101,9 @@
 			"pk": 10
 		},
 		{
-			"title": "Переступить черту",
-			"description": "Юность певца Джонни Кэша была омрачена гибелью его брата и пренебрежительным отношением отца. Военную службу будущий певец проходил в Германии. После свадьбы и рождения дочери он выпустил свой первый хит и вскоре отправился в турне по США вместе с Джерри Ли Льюисом, Элвисом Пресли и Джун Картер, о которой он безнадёжно мечтал целых десять лет.",
-			"trailer": "https://www.youtube.com/watch?v=RnFrrzg1OEQ",
+			"title": "Walk the Line",
+			"description": "Johnny Cash, an aspiring musician, receives a golden opportunity to tour with the famous June Carter. As Johnny's musical career takes a flight, his marriage with Vivian starts falling apart.",
+			"trailer": "https://youtu.be/pbQ22zWPYbw",
 			"year": 2005,
 			"rating": 7.8,
 			"genre_id": 4,
@@ -111,9 +111,9 @@
 			"pk": 11
 		},
 		{
-			"title": "Дюна",
-			"description": "Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. В результате захвата власти Пол вынужден бежать и скрываться, и это становится началом его эпического путешествия. Враждебный мир Арракиса приготовил для него множество тяжелых испытаний, но только тот, кто готов взглянуть в глаза своему страху, достоин стать избранным.",
-			"trailer": "https://www.youtube.com/watch?v=DOlTmIhEsg0",
+			"title": "Dune",
+			"description": "Paul Atreides arrives on Arrakis after his father accepts the stewardship of the dangerous planet. However, chaos ensues after a betrayal as forces clash to control melange, a precious resource.",
+			"trailer": "https://youtu.be/8g18jFHCLXk",
 			"year": 2021,
 			"rating": 8.4,
 			"genre_id": 7,
@@ -121,9 +121,9 @@
 			"pk": 12
 		},
 		{
-			"title": "Ла-Ла Ленд",
-			"description": "Это история любви старлетки, которая между прослушиваниями подает кофе состоявшимся кинозвездам, и фанатичного джазового музыканта, вынужденного подрабатывать в заштатных барах. Но пришедший к влюбленным успех начинает подтачивать их отношения.",
-			"trailer": "https://www.youtube.com/watch?v=lneNCBIXD4I",
+			"title": "La La Land",
+			"description": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
+			"trailer": "https://youtu.be/0pdqf4P9MB8",
 			"year": 2016,
 			"rating": 8,
 			"genre_id": 18,
@@ -131,9 +131,9 @@
 			"pk": 13
 		},
 		{
-			"title": "Лето",
-			"description": "Рассказ о начале творческого пути Виктора Цоя и группы «Кино», о его взаимоотношениях с Майком Науменко, его женой Натальей и многими, кто был в авангарде рок-движения Ленинграда 1981 года.",
-			"trailer": "https://www.youtube.com/watch?v=TvAbtsQKrHA",
+			"title": "Leto",
+			"description": "A love story set against the backdrop of a pivotal moment in Russian culture, Leto captures people -- and a generation -- in thrilling flux",
+			"trailer": "https://youtu.be/U8ftavdKq_s",
 			"year": 2018,
 			"rating": 7.3,
 			"genre_id": 4,
@@ -141,9 +141,9 @@
 			"pk": 14
 		},
 		{
-			"title": "Сияние ",
-			"description": "Джек Торренс с женой и сыном приезжает в элегантный отдалённый отель, чтобы работать смотрителем во время мертвого сезона. Торренс здесь раньше никогда не бывал. Или это не совсем так? Ответ лежит во мраке, сотканном из преступного кошмара.",
-			"trailer": "https://www.youtube.com/watch?v=NMSUEhDWXH0",
+			"title": "The Shining",
+			"description": "Jack and his family move into an isolated hotel with a violent past. Living in isolation, Jack begins to lose his sanity, which affects his family members.",
+			"trailer": "https://youtu.be/S014oGZiSdI",
 			"year": 1980,
 			"rating": 8.4,
 			"genre_id": 6,
@@ -151,9 +151,9 @@
 			"pk": 15
 		},
 		{
-			"title": "Веном",
-			"description": "Что если в один прекрасный день в тебя вселяется существо-симбиот, которое наделяет тебя сверхчеловеческими способностями? Вот только Веном – симбиот совсем недобрый, и договориться с ним невозможно. Хотя нужно ли договариваться?.. Ведь в какой-то момент ты понимаешь, что быть плохим вовсе не так уж и плохо. Так даже веселее. В мире и так слишком много супергероев! Мы – Веном!",
-			"trailer": "https://www.youtube.com/watch?v=n7GlLxV_Igk",
+			"title": "Venom",
+			"description": "While trying to take down Carlton, the CEO of Life Foundation, Eddie, a journalist, investigates experiments of human trials. Unwittingly, he gets merged with a symbiotic alien with lethal abilities.",
+			"trailer": "https://youtu.be/u9Mv98Gr5pY",
 			"year": 2018,
 			"rating": 6.7,
 			"genre_id": 7,
@@ -161,9 +161,9 @@
 			"pk": 16
 		},
 		{
-			"title": "Донни Дарко",
-			"description": "К своим 16 годам старшеклассник Донни уже знает, что такое смерть. После несчастного случая, едва не стоившего ему жизни, Донни открывает в себе способности изменять время и судьбу. Произошедшие с ним перемены пугают его окружение — родителей, сестер, учителей, друзей и любимую девушку.",
-			"trailer": "https://www.youtube.com/watch?v=9H_t5cdszFU",
+			"title": "Donnie Darko",
+			"description": "Donnie Darko, an awkward teenager, befriends Frank, a figure in a bunny costume only he can see, who informs Donnie that the world will end in 28 days, 6 hours, 42 minutes, and 12 seconds.",
+			"trailer": "https://youtu.be/bzLn8sYeM9o",
 			"year": 2001,
 			"rating": 8,
 			"genre_id": 7,
@@ -171,9 +171,9 @@
 			"pk": 17
 		},
 		{
-			"title": "Душа",
-			"description": "Уже немолодой школьный учитель музыки Джо Гарднер всю жизнь мечтал выступать на сцене в составе джазового ансамбля. Однажды он успешно проходит прослушивание у легендарной саксофонистки и, возвращаясь домой вне себя от счастья, падает в люк и умирает. Теперь у Джо одна дорога — в Великое После, но он сбегает с идущего в вечность эскалатора и случайно попадает в Великое До. Тут новенькие души обретают себя, и у будущих людей зарождаются увлечения, мечты и интересы. Джо становится наставником упрямой души 22, которая уже много веков не может найти свою искру и отправиться на Землю.",
-			"trailer": "https://www.youtube.com/watch?v=vsb8762mE6Q",
+			"title": "Soul",
+			"description": "Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true passion is jazz -- and he's good. But when he travels to another realm to help someone find their passion, he soon discovers what it means to have soul.",
+			"trailer": "https://youtu.be/xOsLIiBStEs",
 			"year": 2020,
 			"rating": 8.1,
 			"genre_id": 16,
@@ -181,9 +181,9 @@
 			"pk": 18
 		},
 		{
-			"title": "Монстр в Париже",
-			"description": "Париж. 1910 год. Ужасный монстр, напоминающий гигантское насекомое, нагоняет страх на всю Францию. Застенчивый киномеханик и неутомимый изобретатель начинают охоту на него. В этой погоне они знакомятся со звездой кабаре, сумасшедшим ученым и его умной обезьянкой и, наконец, самим монстром, который оказывается совсем не страшным. Теперь безобидное, как блоха, чудовище ищет у своих новых друзей защиты от вредного начальника городской полиции.",
-			"trailer": "https://www.youtube.com/watch?v=rKsdTuvrF5w",
+			"title": "A Monster in Paris",
+			"description": "Raoul is a delivery boy by day and an amateur scientist at night. One of Raoul's many experiments goes wrong and a tiny flea finds itself caught in the middle.",
+			"trailer": "https://youtu.be/4PqBTnqIHu4",
 			"year": 2010,
 			"rating": 6.1,
 			"genre_id": 16,
@@ -191,9 +191,9 @@
 			"pk": 19
 		},
 		{
-			"title": "Упс... Приплыли!",
-			"description": "От Великого потопа зверей спас ковчег. Но спустя полгода скитаний они готовы сбежать с него куда угодно. Нервы на пределе. Хищники готовы забыть про запреты и заглядываются на травоядных. Единственное спасение — найти райский остров. Там простор и полно еды. Но даже если он совсем близко, будут ли рады местные такому количеству гостей?",
-			"trailer": "https://www.youtube.com/watch?v=Qjpmysz4x-4",
+			"title": "Ooops! The Adventure Continues",
+			"description": "Adrift on a flood, two misfit castaways struggle to reunite an unorthodox family, out-run a volcano, and negotiate a peace deal on a creaking Ark.",
+			"trailer": "https://youtu.be/76AcoMW4VQ4",
 			"year": 2020,
 			"rating": 5.9,
 			"genre_id": 16,
@@ -203,157 +203,157 @@
 	],
 	"directors": [
 		{
-			"name": "Тейлор Шеридан",
+			"name": "Taylor Sheridan",
 			"pk": 1
 		},
 		{
-			"name": "Квентин Тарантино",
+			"name": "Quentin Tarantino",
 			"pk": 2
 		},
 		{
-			"name": "Владимир Вайншток",
+			"name": "Vladimir Vajnshtok",
 			"pk": 3
 		},
 		{
-			"name": "Декстер Флетчер",
+			"name": "Dexter Fletcher",
 			"pk": 4
 		},
 		{
-			"name": "Стив Энтин",
+			"name": "Steve Antin",
 			"pk": 5
 		},
 		{
-			"name": "Роб Маршалл",
+			"name": "Rob Marshall",
 			"pk": 6
 		},
 		{
-			"name": "Баз Лурман",
+			"name": "Baz Luhrmann",
 			"pk": 7
 		},
 		{
-			"name": "Дэмьен Шазелл",
+			"name": "Damien Chazelle",
 			"pk": 8
 		},
 		{
-			"name": "Пьетро Антон",
+			"name": "Pietro Anton",
 			"pk": 9
 		},
 		{
-			"name": "Джеймс Мэнголд",
+			"name": "James Mangold",
 			"pk": 10
 		},
 		{
-			"name": "Дени Вильнёв",
+			"name": "Denis Villeneuve",
 			"pk": 11
 		},
 		{
-			"name": "Кирилл Серебренников",
+			"name": "Kirill Serebrennikov",
 			"pk": 12
 		},
 		{
-			"name": "Рубен Фляйшер",
+			"name": "Ruben Fleische",
 			"pk": 13
 		},
 		{
-			"name": "Стэнли Кубрик",
+			"name": "Stanley Kubrick",
 			"pk": 14
 		},
 		{
-			"name": "Ричард Келли",
+			"name": "Richard Kelly",
 			"pk": 15
 		},
 		{
-			"name": "Пит Доктер",
+			"name": "Pete Docter",
 			"pk": 16
 		},
 		{
-			"name": "Кемп Пауэрс",
+			"name": "Kemp Powers",
 			"pk": 17
 		},
 		{
-			"name": "Бибо Бержерон",
+			"name": "Bibo Bergeron",
 			"pk": 18
 		},
 		{
-			"name": "Тоби Генкель",
+			"name": "Toby Genkel",
 			"pk": 19
 		},
 		{
-			"name": "Шон Маккормак",
+			"name": "Sean McCormack",
 			"pk": 20
 		}
 	],
 	"genres": [
 		{
-			"name": "Комедия",
+			"name": "Comedy",
 			"pk": 1
 		},
 		{
-			"name": "Семейный",
+			"name": "Family",
 			"pk": 2
 		},
 		{
-			"name": "Фэнтези",
+			"name": "Fantasy",
 			"pk": 3
 		},
 		{
-			"name": "Драма",
+			"name": "Drama",
 			"pk": 4
 		},
 		{
-			"name": "Приключения",
+			"name": "Adventure",
 			"pk": 5
 		},
 		{
-			"name": "Триллер",
+			"name": "Thriller",
 			"pk": 6
 		},
 		{
-			"name": "Фантастика",
+			"name": "Sci-fi",
 			"pk": 7
 		},
 		{
-			"name": "Аниме",
+			"name": "Anime",
 			"pk": 8
 		},
 		{
-			"name": "Документальное",
+			"name": "Documentary",
 			"pk": 9
 		},
 		{
-			"name": "Короткометражка",
+			"name": "Short film",
 			"pk": 10
 		},
 		{
-			"name": "Ужасы",
+			"name": "Horror",
 			"pk": 11
 		},
 		{
-			"name": "Боевик",
+			"name": "Action",
 			"pk": 12
 		},
 		{
-			"name": "Мелодрама",
+			"name": "Romance",
 			"pk": 13
 		},
 		{
-			"name": "Детектив",
+			"name": "Detective",
 			"pk": 14
 		},
 		{
-			"name": "Авторское кино",
+			"name": "Independent cinema",
 			"pk": 15
 		},
 		{
-			"name": "Мультфильм",
+			"name": "Animated",
 			"pk": 16
 		},
 		{
-			"name": "Вестерн",
+			"name": "Western",
 			"pk": 17
 		},
 		{
-			"name": "Мюзикл",
+			"name": "Musical",
 			"pk": 18
 		}
 	]
