@@ -1,5 +1,4 @@
 from flask_restx import Namespace, Resource
-from flask import abort
 from project.container import genres_service
 from project.setup.api.models import genre
 from project.setup.api.parsers import page_parser
