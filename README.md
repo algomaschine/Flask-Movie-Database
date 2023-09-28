@@ -4,7 +4,7 @@
 
 <p><b>Technologies:</b> Flask, PostgreSQL, SQLAlchemy, Docker, SQLite.</p>
 
-This is a Flask API for an online movie database with authentication and the CRUD for movies, directors, genres and users. The base structure of the app (like config factory, container, base DAO/service layers for base models, and overall module structure) was provided by the course tutors.
+This is a Flask API for an online movie database with authentication and the CRUD for movies, directors, genres and users. The base structure of the API (like config factory, container, base DAO/service layers for base models, and overall module structure) was provided by the course tutors.
 
 ## How to run:
 1. Copy the repository to your computer
