@@ -34,6 +34,9 @@ Regarding deployment, I discovered the problem with containers built on M1 archi
 Also, My DevOps frriend helped me get confident with ssh connections and also toggle the server’s system settings so everything would run smoothly.</li></p>
 </ul>
 
+## Future enhancements
+Currently, I am working on making a docker-compose file with a properly implemented NGINX for this project.
+
 ## Summary
 
 This project is not perfect in any way. It was my first big project, so, once I have completed the main challenges, I decided to leave it as it is in order to continue learning and building new things.
@@ -72,6 +75,10 @@ This project is not perfect in any way. It was my first big project, so, once I 
 При развертке я столкнулась с тем, что контейнеры на архитектуре M1 на сервере просто не запускались. Решение, котороя я нашла — задавать платформу linux/amd64 для образов.
 Мой друг-ДевОпса помог набраться понимания и уверенности с ssh-подключением, а также включить нужные системные настройки на сервере, чтобы все работало.</li></p>
 </ul>
+
+### Будущие улучшения
+
+На данный момент я работаю над docker-compose с правильно подключенным NGINX для этого проекта.
 
 ## Дополнительно
 
