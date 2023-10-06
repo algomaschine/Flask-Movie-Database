@@ -22,7 +22,7 @@ Swagger documentation is accessible on the root page (loacalhost:port/ where por
 ## Challenges
 <ul>
 <p><li>When I was doing the project, it was not easy getting my head around the pre-maid part of it — its code was way ahead of the course curriculum. In the end, I understood it decently enough to integrate my own parts of code into it and also tweak some of the base code where needed.
-After this project, the architecture of APIs built with Flask is one of my ongoing interests, since I've encountered the need to figure it out for my pet project Reminder and haven't found a solution that would have satisfied me yet.</li></p>
+After this project, the architecture of APIs built with Flask is one of my ongoing interests, since I've encountered the need to figure it out for my pet project Reminder.</li></p>
 
 <p><li>The other difficulty was the structure of the project itself. Having to properly divide the API's logic into three layers and keep track of all of them was not easy. Eventually, I got used to it, but returning to this project after Django, I still find its structure to be complicated.</li></p>
 
@@ -65,7 +65,7 @@ This project is not perfect in any way. It was my first big project, so, once I 
 ## Трудности
 <ul>
 <p><li>Разобраться в структуре, которую дали для проекта, было непросто — код был гораздо сложнее того, что объясняли на курсе. Я разобралась достаточно для того, чтобы вписать свой код и даже править какие-то части изначального кода.
-С тех пор архитектура приложений на Flask стала одной из самых интересных и насущных для меня тем (в том числе потому, что я столкнулась с необходимостью ее продумывать в своем пет-проекте Reminder и до сих пор не нашла решения, которое меня бы устроило).</li></p>
+С тех пор архитектура приложений на Flask стала одной из самых интересных и насущных для меня тем (в том числе потому, что я столкнулась с необходимостью ее продумывать в своем пет-проекте Reminder).</li></p>
 
 <p><li>Другой трудностью была сама структура проекта. Правильно разделить логику на три слоя, а еще держать в голове, что происходит на каждом из них, было непросто. Со временем я к этому привыкла, хотя после проектов на Django она все равно выглядит очень сложной.</li></p>
 
@@ -73,7 +73,7 @@ This project is not perfect in any way. It was my first big project, so, once I 
 
 <p><li>Сложнее всего было автоматизировать развертку приложения на облачный сервер через Docker и GitHub actions, в том числе создать вольюм для базы данных. В программе курса материала по Docker было мало, поэтому, чтобы лучше разобраться, я прошла отдельный мини-курс по нему. После этого я смогла правильно настроить вольюм.
 При развертке я столкнулась с тем, что контейнеры на архитектуре M1 на сервере просто не запускались. Решение, котороя я нашла — задавать платформу linux/amd64 для образов.
-Мой друг-ДевОпса помог набраться понимания и уверенности с ssh-подключением, а также включить нужные системные настройки на сервере, чтобы все работало.</li></p>
+Мой друг-ДевОпс помог набраться понимания и уверенности с ssh-подключением, а также включить нужные системные настройки на сервере, чтобы все работало.</li></p>
 </ul>
 
 ### Будущие улучшения
