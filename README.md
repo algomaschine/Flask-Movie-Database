@@ -2,7 +2,7 @@
 
 # Flask movie database
 
-<p><b>Technologies:</b> Flask, PostgreSQL, SQLAlchemy, Docker, SQLite.</p>
+<p><b>Technologies:</b> Flask, SQLAlchemy, SQLite, Docker.</p>
 
 This is a Flask API for an online movie database with authentication and the CRUD for movies, directors, genres and users. The base structure of the API (like config factory, container, base DAO/service layers for base models, and overall module structure) was provided by the course tutors.
 
@@ -45,7 +45,7 @@ This project is not perfect in any way. It was my first big project, so, once I 
 
 # Курсовая работа по Flask: онлайн-база кино
 
-<p><b>Технологии:</b> Flask, PostgreSQL, SQLAlchemy, Docker, SQLite.</p>
+<p><b>Технологии:</b> Flask, SQLAlchemy, SQLite, Docker.</p>
 
 Это API на Flask для оналйн-базы кино с аутентификацией, CRUD для фильмов, режиссеров, жанров и пользователей. Базовая структура приложения (например, модуль с config factory, container, базовые DAO/service и модели) была предоставлена на курсе.
 
