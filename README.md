@@ -51,7 +51,7 @@ This project is not perfect in any way. It was my first big project, so, once I 
 
 REST API на Flask для базы данных фильмов. Предоставляет CRUD для пользователей, фильмов, жанров и режиссеров, пользователи могут добавлять фильмы в избранное.
 
-API использует базу данных SQLite через SQLAlchemy, сервисы авторизации и аутентификации с помощью JWT и SHA-256. Также для API есть тесты, Dockerfile и docker-compose, сценарий GitHub Actions для CI/CD и документация Swagger.
+В API используется база данных SQLite через SQLAlchemy, сервисы авторизации и аутентификации с помощью JWT и SHA-256. Также для API есть тесты, Dockerfile и docker-compose, сценарий GitHub Actions для CI/CD и документация Swagger.
 
 Базовая структура приложения (например, модуль с config factory, container, базовые DAO/service и модели) была предоставлена на курсе.
 
