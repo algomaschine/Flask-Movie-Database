@@ -2,9 +2,11 @@
 
 # Flask movie database
 
-<p><b>Technologies:</b> Flask, SQLAlchemy, SQLite, Docker.</p>
+Flask REST API for a movie database. Provides CRUD for users, movies, genres, and directors, and also allows users to add movies to their favorites.
 
-This is a Flask API for an online movie database with authentication and the CRUD for movies, directors, genres and users. The base structure of the API (like config factory, container, base DAO/service layers for base models, and overall module structure) was provided by the course tutors.
+API uses an SQLite database with SQLAlchemy. It has authorization and authentication services with JWT and SHA-256 for password hashing. Also has tests, a Dockerfile, a docker-compose file, a GitHub Actions script for CI/CD development, and Swagger documentation.
+
+The base structure of the API (like config factory, container, base DAO/service layers for base models, and overall module structure) was provided by the course tutors.
 
 ## How to run:
 1. Copy the repository to your computer
@@ -47,7 +49,11 @@ This project is not perfect in any way. It was my first big project, so, once I 
 
 <p><b>Технологии:</b> Flask, SQLAlchemy, SQLite, Docker.</p>
 
-Это API на Flask для оналйн-базы кино с аутентификацией, CRUD для фильмов, режиссеров, жанров и пользователей. Базовая структура приложения (например, модуль с config factory, container, базовые DAO/service и модели) была предоставлена на курсе.
+REST API на Flask для базы данных фильмов. Предоставляет CRUD для пользователей, фильмов, жанров и режиссеров, пользователи могут добавлять фильмы в избранное.
+
+API использует базу данных SQLite через SQLAlchemy, сервисы авторизации и аутентификации с помощью JWT и SHA-256. Также для API есть тесты, Dockerfile и docker-compose, сценарий GitHub Actions для CI/CD и документация Swagger.
+
+Базовая структура приложения (например, модуль с config factory, container, базовые DAO/service и модели) была предоставлена на курсе.
 
 ## Как запустить:
 1. Скопируйте репозиторий на компьютер
