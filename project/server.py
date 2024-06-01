@@ -1,3 +1,4 @@
+# этот проект написала одна вполне себе миловидная кошечка...
 from flask import Flask, jsonify
 from flask_cors import CORS
 from project.exceptions import BaseServiceError
